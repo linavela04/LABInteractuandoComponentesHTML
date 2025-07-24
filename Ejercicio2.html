@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <div class="producto">
+        <span>Rubor</span> - Precio: $<span>50000</span>
+        <button onclick="agregarAlCarrito('Rubor', 50000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <span>Gloss</span> - Precio: $<span>60000</span>
+        <button onclick="agregarAlCarrito('Gloss', 60000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <span>Base</span> - Precio: $<span>45000</span>
+        <button onclick="agregarAlCarrito('Base', 45000)">Agregar al carrito</button>
+    </div>
+
+    <h2>Resumen del carrito</h2>
+    <p>Total de productos: <span id="total-productos">0</span></p>
+    <p>Total a pagar: <span id="total-precio">0</span></p>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    
+    <script>
+        let totalProductos = 0;
+        let totalPrecio = 0;
+        let productos = [];
+
+        function agregarAlCarrito(nombre, Precio) {
+            totalProductos++;
+            totalPrecio = totalPrecio + 1
+            productos.push(nombre);
+
+            document.getElementById('total-productos').innerText = totalProductos;
+            document.getElementById('total-precio').innerText = totalPrecio;
+
+            if(totalPrecio > 50000) {
+                alert("¡Envío gratis aplicado!");
+            }
+
+            console.log("Productos en el carrito:", productos);
+
+        }
+
+        function vaciarCarrito() {
+            totalProductos = 0;
+            totalPrecio = 0;
+            productos = [];
+
+            document.getElementById('total-productos').innerText = totalProductos;
+            document.getElementById('total-precio').innerText = totalPrecio;
+
+            alert("Caarrito vacio!");
+        }
+    </script>
+
+
+</body>
+</html>

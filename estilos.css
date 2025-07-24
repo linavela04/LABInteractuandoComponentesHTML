@@ -1,10 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20 px;
-    background-color: blanchedalmond;
+    padding: 20px;
+    background-color: rgb(175, 223, 224);
 }
 h1 {
-    color: indianred;
+    color: rgb(26, 0, 121);
 }
 
 .opcion {
@@ -12,14 +12,14 @@ h1 {
     font-size: 18px;
 }
 button {
-    padding: 10 px 15 px;
-    margin-right: 10 px;
-    background-color: bisque;
-    color: azure;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: rgb(144, 105, 180);
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 5 px;
+    border-radius: 5px;
     cursor: pointer;
 }
 button:hover {
-    background-color: aquamarine;
+    background-color: rgb(138, 109, 243);
 } 

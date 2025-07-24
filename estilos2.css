@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(250, 187, 226);
+}
+
+h1,h2 {
+    color: rgb(104, 0, 52)
+}
+.producto {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgb(243, 164, 205);
+    color: rgb(160, 21, 21);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(119, 27, 58);
+}
